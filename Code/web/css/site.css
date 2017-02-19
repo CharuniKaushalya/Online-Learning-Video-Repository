@@ -1,0 +1,225 @@
+html,
+body {
+    height: 100%;
+}
+
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+/* Posts */
+.posts .post-item {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #F5F5F5;
+}
+.posts .post-item .post-title {
+  font-size: 25px;
+  font-weight: 400;
+  color: #434a54;
+  float: left;
+  width: 100%;
+  line-height: 30px;
+}
+.posts .post-item .post-title a {
+  font-size: 25px;
+  color: #434a54;
+}
+.posts .post-item .post-date {
+  font-size: 11px;
+  color: #99a0aa;
+  line-height: 20px;
+  margin: 5px 0px 0px;
+  float: left;
+  width: 100%;
+}
+.posts .post-item .post-date a {
+  color: #99a0aa;
+}
+.posts .post-item .post-date .fa {
+  font-size: 12px;
+  margin-right: 5px;
+}
+.posts .post-item .post-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 6px;
+}
+.posts .post-item .post-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.posts .post-item .post-text {
+  font-size: 13px;
+  float: left;
+  width: 100%;
+  margin: 10px 0px;
+}
+.posts .post-item .post-row {
+  float: left;
+  width: 100%;
+  font-size: 11px;
+}
+.posts .post-item .post-row .post-info {
+  line-height: 20px;
+  padding: 5px 10px;
+  border: 1px solid #F5F5F5;
+  font-size: 11px;
+  color: #99a0aa;
+  float: left;
+}
+.posts .post-item:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  border-bottom: 0px;
+}
+.post-image {
+  float: left;
+}
+.links {
+  float: left;
+  width: 100%;
+  padding: 5px 10px;
+}
+.links a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #656d78;
+  display: block;
+  float: left;
+  width: 100%;
+  line-height: 30px;
+}
+.links a .label {
+  float: right;
+  padding: 5px 10px;
+  margin-top: 3px;
+}
+.links.small a {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+#play {
+    background: url('http://cdn1.iconfinder.com/data/icons/iconslandplayer/PNG/64x64/CircleBlue/Play1Pressed.png') center center no-repeat;
+    margin: -200px 10px 0 0;
+    height: 240px;
+    position: relative;
+    z-index: 10;
+}
+/* eof posts */
